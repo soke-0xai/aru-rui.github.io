@@ -8,6 +8,7 @@ const nextConfig = {
     return config;
   },
   swcMinify: false,
+  transpilePackages: ['@babel/preset-react']
 };
 
 module.exports = nextConfig;
