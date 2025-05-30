@@ -113,9 +113,13 @@ function MainComponent() {
               <img src="https://potofu.me/favicon.ico" alt="Potofu" className="w-4 h-4" />
               <span className="text-[#4a4a4a]">Potofu</span>
             </a>
-            <div className="w-full flex justify-center mt-4">
-              <div data-ofuse-widget-button href="https://ofuse.me/o?uid=99983" data-ofuse-id="99983" data-ofuse-color="blue-invert" data-ofuse-text=""或 るい" に応援を送る"></div>
-            </div>
+            <div
+              data-ofuse-widget-button
+              href="https://ofuse.me/o?uid=99983"
+              data-ofuse-id="99983"
+              data-ofuse-color="blue-invert"
+              data-ofuse-text={`"或 るい" に応援を送る`}
+            />
           </div>
           <p className="text-sm text-[#888] mt-6 text-center">
             メインはカクヨムでの投稿となります。コンテストなどの都合により、プラットフォームを使い分けることがあります。
