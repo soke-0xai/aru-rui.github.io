@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 function MainComponent() {
   const [works] = useState([
@@ -30,7 +30,7 @@ function MainComponent() {
     <div className="min-h-screen bg-[#faf8f5] text-[#4a4a4a] font-crimson-text">
       <header className="bg-white/80 backdrop-blur-sm shadow-sm fixed w-full z-10">
         <div className="container mx-auto px-4 py-6">
-          <h1 className="text-3xl text-[#6d6d6d] text-center">
+          <h1 className="text-3xl text-[#6d6d6d] text-center font-hannari">
             夢泡アーカイブ
           </h1>
           <p className="text-center text-[#888] mt-2">或るいの家</p>
@@ -104,6 +104,18 @@ function MainComponent() {
               <i className="fab fa-x-twitter text-[#1da1f2]"></i>
               <span className="text-[#1da1f2]">X（Twitter）</span>
             </a>
+            <a
+              href="https://potofu.me/aru-rui"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-[#4a4a4a]/10 rounded-lg hover:bg-[#4a4a4a]/20 transition-colors"
+            >
+              <img src="https://potofu.me/favicon.ico" alt="Potofu" className="w-4 h-4" />
+              <span className="text-[#4a4a4a]">Potofu</span>
+            </a>
+            <div className="w-full flex justify-center mt-4">
+              <div data-ofuse-widget-button href="https://ofuse.me/o?uid=99983" data-ofuse-id="99983" data-ofuse-color="blue-invert" data-ofuse-text=""或 るい" に応援を送る"></div>
+            </div>
           </div>
           <p className="text-sm text-[#888] mt-6 text-center">
             メインはカクヨムでの投稿となります。コンテストなどの都合により、プラットフォームを使い分けることがあります。
@@ -154,11 +166,17 @@ function MainComponent() {
         .group:nth-child(3) {
           animation-delay: -5.3s;
         }
+
+        .font-hannari {
+          font-family: "Hannari", serif;
+        }
       `}</style>
 
       <footer className="bg-white/80 py-6 text-center text-[#888]">
         <p>© 2025 或るい</p>
       </footer>
+
+      <script async src="https://ofuse.me/assets/platform/widget.js" charSet="utf-8"></script>
     </div>
   );
 }
