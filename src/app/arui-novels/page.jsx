@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 
 function MainComponent() {
@@ -165,10 +164,6 @@ function MainComponent() {
 
         .group:nth-child(3) {
           animation-delay: -5.3s;
-        }
-
-        .font-hannari {
-          font-family: "Hannari", serif;
         }
       `}</style>
 
